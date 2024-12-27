@@ -66,3 +66,6 @@ Flow: Chọn cha mẹ → crossover → mutation → child → select best child
 + mutation : 
 ## Thành Viên
 Nhóm gồm 4 thành viên: Tiến, Hùng, Thái, Hiếu. Trong đó, Hiếu implement crossover
+
+References:
+- References: https://github.com/hoanghungbk/GAs-for-TSP
