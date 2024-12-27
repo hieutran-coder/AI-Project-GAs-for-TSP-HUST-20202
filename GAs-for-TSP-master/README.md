@@ -69,3 +69,4 @@ Nhóm gồm 4 thành viên: Tiến, Hùng, Thái, Hiếu. Trong đó, Hiếu cà
 
 References:
 - https://github.com/hoanghungbk/GAs-for-TSP
+- https://www.obitko.com/tutorials/genetic-algorithms/selection.php
