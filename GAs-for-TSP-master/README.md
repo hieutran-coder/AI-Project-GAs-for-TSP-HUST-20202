@@ -65,7 +65,7 @@ Flow: Chọn cha mẹ → crossover → mutation → child → select best child
 + crossover: có nhiều pp để lai ghép ( uniform order crossover, one point crossover,two point crossover,…)
 + mutation : 
 ## Thành Viên
-Nhóm gồm 4 thành viên: Tiến, Hùng, Thái, Hiếu. Trong đó, Hiếu cài đặt thuật toán crossover.
+Nhóm gồm 4 thành viên: Tiến, Hùng, Thái, Hiếu.
 
 References:
 - https://github.com/hoanghungbk/GAs-for-TSP
