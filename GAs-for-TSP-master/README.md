@@ -70,3 +70,4 @@ Nhóm gồm 4 thành viên: Tiến, Hùng, Thái, Hiếu.
 References:
 - https://github.com/hoanghungbk/GAs-for-TSP
 - https://www.obitko.com/tutorials/genetic-algorithms/selection.php
+- https://github.com/nguyentien090200/GAs-for-TSP
