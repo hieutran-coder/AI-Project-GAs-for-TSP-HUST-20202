@@ -64,3 +64,5 @@ Thuật toán di truyền dựa trên 3 hoạt động chính : lai ghép, độ
 Flow: Chọn cha mẹ → crossover → mutation → child → select best child → new Generation
 + crossover: có nhiều pp để lai ghép ( uniform order crossover, one point crossover,two point crossover,…)
 + mutation : 
+## Thành Viên
+Nhóm gồm 4 thành viên: Tiến, Hùng, Thái, Hiếu. Trong đó, Hiếu implement crossover
