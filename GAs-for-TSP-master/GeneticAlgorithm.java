@@ -58,4 +58,43 @@ public class GeneticAlgorithm {
 	public Population mutatePopulation(Population population) {
 		return newPopulation;
 	}
+
+
+
+/**
+	 *Select Parent for crossover using Roulette Wheel 
+	 */
+	public Individual rouletteSelection(Population population) {
+		double totalFitness = population.getPopulationFitness();
+		
+		// We pick a random value - a point on our roulette wheel
+		Random Random = new Random();
+		int selectedValue = Random.nextInt((int) totalFitness);
+		
+		// the probability of selecting a genome would be
+		    // inversely proportional to its fitness - the smaller the fitness
+		    // the higher the probability
+		double recValue = 1/ selectedValue;
+		
+		double currentSum = 0;
+		 // We add up values until we reach out recValue, and we pick the
+	    // genome that crossed the threshold
+		for (int populationIndex = 0; populationIndex < population.size(); populationIndex ++) {
+				Individual chromosome = population.getIndividuals()[populationIndex];
+				currentSum += 1/chromosome.getFitness();
+				
+				if (currentSum >= recValue) {
+					return chromosome;
+				}
+		}
+		// In case the return doesn't happen in the loop above, we just
+		// select at all random
+		int selectRandom = Random.nextInt(population.size());
+		return population.getIndividuals()[selectRandom];
+	}
 	
+
+	//Elitism is name of method, which first copies the best chromosome (or a few best chromosomes) to new population.
+	//public Individual elitismSelection(Population population ) {
+	//return population.getFittest(population.size());
+	//}
